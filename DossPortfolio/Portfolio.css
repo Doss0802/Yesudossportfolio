@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#051f30, #051f30);
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 100%;
+    transition: .3s;
+    scrollbar-width: none;
+    overflow: hidden scroll;
+    background: #ffffff12;
+    -ms-overflow-style: none;
+    padding: 20px 20px 20px 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 8px 0px 9px 0px #00000014;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+.menu:hover li span:nth-child(2) {
+    display: block;
+}
+
+.menu-content li {
+    list-style: none;
+    border-radius: 0px 50px 50px 0;
+    transition: .3s;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.menu-content li:hover {
+    background: #0c0c0c;
+}
+
+.menu-content li span:nth-child(2) {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+    display: flex;
+    align-items: center;
+    font-family: 'calibri';
+}
+
+.material-symbols-outlined {
+    padding: 10px;
+    font-size: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #0c0c0c;
+}
+
+.name{
+    color: aliceblue;
+}
+
+.name2{
+    background: linear-gradient(90deg, #cce7ff, #a3d5ff); /* Light Sky Blue Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.gmail{
+    display: inline-block;
+    left: 300px;
+    position: relative;
+    width: 605px;
+    height: 60px;
+    color: aliceblue;
+}
+
+.logo1{
+    display: inline-block;
+}
+
+.gmailh3{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+
+.call{
+    display: inline-block;
+    left: 1px;
+    position: relative;
+    width: 605px;
+    height: 60px;
+    color: aliceblue;
+}
+
+.logo2{
+    display: inline-block;
+}
+
+.callh3{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+
+.location{
+    display: inline-block;
+    left: 825px;
+    position: relative;
+    width: 605px;
+    height: 60px;
+    color: aliceblue;
+    bottom: 61px;
+}
+
+.logo3{
+    display: inline-block;
+}
+
+.locationh3{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+
+.date{
+    display: inline-block;
+    left: 600px;
+    position: relative;
+    width: 605px;
+    height: 60px;
+    color: aliceblue;
+    bottom: 61px;
+}
+
+.logo4{
+    display: inline-block;
+}
+
+.dateh3{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+
+.aboutme{
+    width: 500px; 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.5);
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+
+.aboutme:hover {
+    box-shadow: 0 0 35px rgba(135, 206, 235, 1), 
+    0 0 60px rgba(135, 206, 235, 0.8); 
+    cursor: pointer;
+}
+
+.aboutmeh1{
+    background: linear-gradient(to right, #fffffb, #cce7ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.aboutmetext{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.technicalskills{
+    width: 500px; 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.5);
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+.technicalskills:hover{
+    box-shadow: 0 0 35px rgba(135, 206, 235, 1), 
+    0 0 60px rgba(135, 206, 235, 0.8); 
+    cursor: pointer;
+}
+
+.technicalskillsh1{
+    background: linear-gradient(to right, #fffffb, #cce7ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.technicalskillstext{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.softskills{
+    width: 500px; 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.5);
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+.softskills:hover{
+    box-shadow: 0 0 35px rgba(135, 206, 235, 1), 
+    0 0 60px rgba(135, 206, 235, 0.8); 
+    cursor: pointer;
+}
+
+.softskillsh1{
+    background: linear-gradient(to right, #fffffb, #cce7ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.softskillstext{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.project{
+    width: 500px; 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.5);
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+.project:hover{
+    box-shadow: 0 0 35px rgba(135, 206, 235, 1), 
+    0 0 60px rgba(135, 206, 235, 0.8); 
+    cursor: pointer;
+}
+
+.projecth1{
+    background: linear-gradient(to right, #fffffb, #cce7ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.projecttext{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.internship{
+    width: 500px; 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.5);
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+.internship:hover{
+    box-shadow: 0 0 35px rgba(135, 206, 235, 1), 
+    0 0 60px rgba(135, 206, 235, 0.8); 
+    cursor: pointer;
+}
+
+.internshiph1{
+    background: linear-gradient(to right, #fffffb, #cce7ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.internshiptext{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.education{
+    width: 500px; 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.5);
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+.education:hover{
+    box-shadow: 0 0 35px rgba(135, 206, 235, 1), 
+    0 0 60px rgba(135, 206, 235, 0.8); 
+    cursor: pointer;
+}
+
+.educationh1{
+    background: linear-gradient(to right, #fffffb, #cce7ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.educationtext1{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.educationtext2{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.educationtext3{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.educationtext4{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.educationtext5{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.educationtext6{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
+
+.languages{
+    width: 500px; 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.5);
+    position: relative;
+    left: 500px;
+    bottom: 0px;
+}
+
+.languages:hover{
+    box-shadow: 0 0 35px rgba(135, 206, 235, 1), 
+    0 0 60px rgba(135, 206, 235, 0.8); 
+    cursor: pointer;
+}
+
+.languagesh1{
+    background: linear-gradient(to right, #fffffb, #cce7ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.languagestext{
+    background: linear-gradient(to right, #ff7f00, #87ceeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold,;
+    font-size: 24px;
+}
